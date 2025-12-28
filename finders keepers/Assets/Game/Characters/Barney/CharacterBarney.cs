@@ -20,4 +20,10 @@ public class CharacterBarney : CharacterScript<CharacterBarney>
 		yield return E.Break;
 		
 	}
+
+	IEnumerator OnLookAt()
+	{
+
+		yield return E.Break;
+	}
 }

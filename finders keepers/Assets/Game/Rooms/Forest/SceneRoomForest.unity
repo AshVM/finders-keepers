@@ -264,13 +264,11 @@ PrefabInstance:
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6318024340470551541, guid: b254fcd8f583c324ba3da9904a492986,
-        type: 3}
+    - target: {fileID: 6318024340470551541, guid: b254fcd8f583c324ba3da9904a492986, type: 3}
       propertyPath: m_Layer
       value: 9
       objectReference: {fileID: 0}
-    - target: {fileID: 6333742694041196779, guid: b254fcd8f583c324ba3da9904a492986,
-        type: 3}
+    - target: {fileID: 6333742694041196779, guid: b254fcd8f583c324ba3da9904a492986, type: 3}
       propertyPath: m_TargetTexture
       value: 
       objectReference: {fileID: 8400000, guid: 4324c231bf09918419d9d3be8f9e5435, type: 2}
@@ -352,8 +350,7 @@ PrefabInstance:
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 212752163434094802, guid: 65de018bf92bf6a4088d8c3f977119e7,
-        type: 3}
+    - target: {fileID: 212752163434094802, guid: 65de018bf92bf6a4088d8c3f977119e7, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 1502030524}
