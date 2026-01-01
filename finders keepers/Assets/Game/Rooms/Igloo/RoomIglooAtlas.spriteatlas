@@ -49,9 +49,9 @@ SpriteAtlas:
     cachedData: {fileID: 0}
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
-  - {fileID: 21300000, guid: 4198603e1ec883e44a3681a78175b98d, type: 3}
+  - {fileID: 21300000, guid: f8abc6ae475e12a47b2d58e73c203587, type: 3}
   m_PackedSpriteNamesToIndex:
-  - background
+  - Screenshot 2025-12-28 054730
   m_RenderDataMap: {}
   m_Tag: RoomIglooAtlas
   m_IsVariant: 0

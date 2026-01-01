@@ -224,4 +224,16 @@ public class RoomForest : RoomScript<RoomForest>
 
 		yield return E.Break;
 	}
+
+	IEnumerator OnInteractHotspotWall( IHotspot hotspot )
+	{
+
+		yield return E.Break;
+	}
+
+	IEnumerator OnLookAtCharacterBarney( ICharacter character )
+	{
+
+		yield return E.Break;
+	}
 }
