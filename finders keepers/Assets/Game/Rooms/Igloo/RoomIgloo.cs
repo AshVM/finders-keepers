@@ -127,13 +127,40 @@ public class RoomIgloo : RoomScript<RoomIgloo>
 
 	IEnumerator OnEnterRoomAfterFade()
 	{
-
+		// Put things here that happen when you enter a room
+		
+		if ( FirstTimeVisited && EnteredFromEditor == false ) // Only run this part the first time you visit, and not when debugging
+		{
+			yield return E.WaitSkip();
+			yield return C.Pebbles.Say("Well, I guess this is a test project for an adventure game");
+			yield return C.Pebbles.WalkTo(Point("EntryWalk"));
+			yield return C.Pebbles.Say("Sure looks adventurey!");
+			Audio.PlayMusic("MusicExample");
+			yield return E.WaitSkip();
+			yield return C.Display("Left Click to Walk & Interact\nRight Click to Look At");
+		}
+		
+		
+		C.Pebbles.WalkToBG(Point("EntryPoint"));
+		
+		
 		yield return E.Break;
 	}
 
 	IEnumerator OnInteractPropFishBucket( IProp prop )
 	{
-
+		yield return C.WalkToClicked();
+		yield return C.FaceClicked();
+		yield return C.Display("pebbles stoops to pick up the bucket");
+		Audio.Play("Bucket");
+		prop.Disable();
+		I.FishBucket.AddAsActive();
+		yield return E.WaitSkip();
+		yield return C.Plr.FaceDown();
+		yield return C.Pebbles.Say("Yaaay! I got a bucket!");
+		yield return E.WaitSkip();
+		yield return C.Display("Access your Inventory from the top of the screen");
+		
 		yield return E.Break;
 	}
 }

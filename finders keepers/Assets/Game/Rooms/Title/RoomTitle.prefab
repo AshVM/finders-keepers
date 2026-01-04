@@ -197,7 +197,7 @@ Transform:
   m_Children:
   - {fileID: 4060924915724048}
   m_Father: {fileID: 4673188962728300}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &114861412243022912
 MonoBehaviour:
@@ -412,7 +412,7 @@ MeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 671
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!102 &102922345853747222
 TextMesh:
@@ -576,7 +576,7 @@ Transform:
   m_LocalScale: {x: 0.5085056, y: 0.3617854, z: 1}
   m_Children: []
   m_Father: {fileID: 4673188962728300}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &114506999126652922
 MonoBehaviour:
@@ -720,10 +720,10 @@ Transform:
   m_Children:
   - {fileID: 4471602823653222}
   - {fileID: 4278230801324418}
+  - {fileID: 9105602453200379580}
   - {fileID: 4770888842128280}
   - {fileID: 4485019497733486}
   - {fileID: 4828638554030358}
-  - {fileID: 9105602453200379580}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -758,10 +758,10 @@ MonoBehaviour:
   m_hotspotComponents: []
   m_propComponents:
   - {fileID: 114590199786068634}
+  - {fileID: 2905424345142888488}
   - {fileID: 114861412243022912}
   - {fileID: 114859604365781486}
   - {fileID: 114506999126652922}
-  - {fileID: 2905424345142888488}
   m_regionComponents: []
   m_walkableAreas:
   - {fileID: 114493187884195118}
@@ -847,7 +847,7 @@ MeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 511
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!102 &102839267374336748
 TextMesh:
@@ -940,7 +940,7 @@ Transform:
   m_Children:
   - {fileID: 4534331662226042}
   m_Father: {fileID: 4673188962728300}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &114859604365781486
 MonoBehaviour:
@@ -1111,11 +1111,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5723510028452925088}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 82, y: -4, z: 0}
+  m_LocalScale: {x: 0.08, y: 0.08, z: 1}
   m_Children: []
   m_Father: {fileID: 4673188962728300}
-  m_RootOrder: 5
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2905424345142888488
 MonoBehaviour:
@@ -1217,7 +1217,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 40
   m_Sprite: {fileID: 21300000, guid: 6ad605aa5376d4a4db437245d7c8fd37, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
