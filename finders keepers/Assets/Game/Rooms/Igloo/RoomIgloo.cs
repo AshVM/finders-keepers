@@ -39,4 +39,16 @@ public class RoomIgloo : RoomScript<RoomIgloo>
 		
 		yield return E.Break;
 	}
+
+	IEnumerator OnInteractPropEmployeeDoor( IProp prop )
+	{
+
+		yield return E.Break;
+	}
+
+	IEnumerator OnInteractPropPeople( IProp prop )
+	{
+
+		yield return E.Break;
+	}
 }
