@@ -6,7 +6,7 @@ SpriteAtlas:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: RoomForestAtlas
+  m_Name: CharacterDolphinAtlas
   m_EditorData:
     serializedVersion: 2
     textureSettings:
@@ -27,7 +27,7 @@ SpriteAtlas:
       m_ResizeAlgorithm: 0
       m_TextureFormat: -1
       m_TextureCompression: 0
-      m_CompressionQuality: 100
+      m_CompressionQuality: 50
       m_CrunchedCompression: 0
       m_AllowsAlphaSplitting: 0
       m_Overridden: 0
@@ -43,27 +43,15 @@ SpriteAtlas:
     secondaryTextureSettings: {}
     variantMultiplier: 1
     packables:
-    - {fileID: 102900000, guid: 45f20a5449443c542a8e594e8de9c5b7, type: 3}
+    - {fileID: 102900000, guid: 2574dd20c8f32f14b93a945cdccd3a72, type: 3}
     bindAsDefault: 1
     isAtlasV2: 0
     cachedData: {fileID: 0}
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
-  - {fileID: 21300000, guid: f3590c32c40d39443bbdde7cb8999ace, type: 3}
-  - {fileID: 21300000, guid: 046d5162a68e5634d945178d28ecd237, type: 3}
-  - {fileID: 21300000, guid: 6a9d21147036e934cad6c2691beae302, type: 3}
-  - {fileID: 21300000, guid: 6c1b7f14280e1b446aa2a03d164a0041, type: 3}
-  - {fileID: 21300000, guid: 92c28a057d747be4fafd0804afd42832, type: 3}
-  - {fileID: 21300000, guid: 845e6dad78aa6134aa8a0d045feccd21, type: 3}
-  - {fileID: 21300000, guid: f8abc6ae475e12a47b2d58e73c203587, type: 3}
+  - {fileID: 21300000, guid: 81ca9855af0587c4fa2f573250d06be4, type: 3}
   m_PackedSpriteNamesToIndex:
-  - Bucket_0
-  - ForegroundL_0
-  - Well_0
-  - Foreground_0
-  - ForegroundR_0
-  - Back_0
-  - Screenshot 2025-12-28 054730
+  - dolphin
   m_RenderDataMap: {}
-  m_Tag: RoomForestAtlas
+  m_Tag: CharacterDolphinAtlas
   m_IsVariant: 0

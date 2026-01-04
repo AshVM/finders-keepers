@@ -236,4 +236,48 @@ public class RoomForest : RoomScript<RoomForest>
 
 		yield return E.Break;
 	}
+
+	IEnumerator OnLookAtHotspotCave( IHotspot hotspot )
+	{
+
+		yield return E.Break;
+	}
+
+	IEnumerator OnUseInvHotspotCave( IHotspot hotspot, IInventory item )
+	{
+
+		yield return E.Break;
+	}
+
+	IEnumerator OnLookAtPropBucket( IProp prop )
+	{
+
+		yield return E.Break;
+	}
+
+	IEnumerator OnUseInvPropBucket( IProp prop, IInventory item )
+	{
+
+		yield return E.Break;
+	}
+
+	IEnumerator OnEnterRegionScale( IRegion region, ICharacter character )
+	{
+
+		yield return E.Break;
+	}
+
+	void OnEnterRegionBGScale( IRegion region, ICharacter character )
+	{
+	}
+
+	IEnumerator OnExitRegionScale( IRegion region, ICharacter character )
+	{
+
+		yield return E.Break;
+	}
+
+	void OnExitRegionBGScale( IRegion region, ICharacter character )
+	{
+	}
 }

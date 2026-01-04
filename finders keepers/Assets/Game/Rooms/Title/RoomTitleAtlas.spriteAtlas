@@ -49,10 +49,16 @@ SpriteAtlas:
     cachedData: {fileID: 0}
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
+  - {fileID: 21300000, guid: f4b16643e0a22c5439a476fda1f89915, type: 3}
   - {fileID: 21300000, guid: e88b7bc9dfe7a314db0431ae6faae2f6, type: 3}
+  - {fileID: 21300000, guid: 6ad605aa5376d4a4db437245d7c8fd37, type: 3}
+  - {fileID: 21300000, guid: 503b42bd8db5ec645acd52dd06dbc875, type: 3}
   - {fileID: 21300000, guid: 1a2ab3fd5685b10489336fb75330da0a, type: 3}
   m_PackedSpriteNamesToIndex:
+  - Finders Keepers Thumbnail
   - Title_0
+  - FINDERS KEEPERS 2
+  - icl twin ts horrible cinema
   - Back_0
   m_RenderDataMap: {}
   m_Tag: RoomTitleAtlas
