@@ -120,4 +120,20 @@ public class RoomIgloo : RoomScript<RoomIgloo>
 
 		yield return E.Break;
 	}
+
+	void OnEnterRoom()
+	{
+	}
+
+	IEnumerator OnEnterRoomAfterFade()
+	{
+
+		yield return E.Break;
+	}
+
+	IEnumerator OnInteractPropFishBucket( IProp prop )
+	{
+
+		yield return E.Break;
+	}
 }

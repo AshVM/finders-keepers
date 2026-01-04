@@ -1280,7 +1280,9 @@ MonoBehaviour:
     m_shortName: Igloo
     m_scriptClass: RoomIgloo
     m_sceneName: SceneRoomIgloo
-    m_points: []
+    m_points:
+    - m_name: EntryPoint
+      m_position: {x: -96, y: -76}
   m_debugStartFunction: 
   m_hotspotComponents:
   - {fileID: 8440869172111339860}
@@ -1296,6 +1298,9 @@ MonoBehaviour:
   - {fileID: 3681605982075976578}
   m_animations: []
   m_sprites:
+  - {fileID: 21300000, guid: aedf3ae28d4df9e42ab7cb4ef1bee02b, type: 3}
+  - {fileID: 21300000, guid: e07c07299ccbe9141b1b4c9edcab5801, type: 3}
+  - {fileID: 21300000, guid: 345c52b2ea9973544906423b426bbdf6, type: 3}
   - {fileID: 21300000, guid: eacebefd19d32844c989a2fbb98ce105, type: 3}
   m_variantShouldOverrideArt: 0
 --- !u!1 &7958140824625976534
@@ -1376,10 +1381,10 @@ PolygonCollider2D:
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 450, y: 180}
+    newSize: {x: 450, y: 180}
+    adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
@@ -1389,6 +1394,51 @@ PolygonCollider2D:
       - {x: -10, y: 10}
       - {x: 10, y: 10}
       - {x: 10, y: -10}
+    - - {x: -211.97101, y: -82.021}
+      - {x: -217.617, y: -71.194}
+      - {x: -219.07, y: -64.189}
+      - {x: -221.238, y: -60.541004}
+      - {x: -222.574, y: -54.067}
+      - {x: -225.535, y: -50.086002}
+      - {x: -225.06801, y: -46.091003}
+      - {x: -222.40001, y: -43.424004}
+      - {x: -220.18001, y: -31.580002}
+      - {x: -220.18001, y: -26.439001}
+      - {x: -222.507, y: -24.112001}
+      - {x: -224.05402, y: -24.112001}
+      - {x: -224.05402, y: -21.257002}
+      - {x: -221.73601, y: -19.606}
+      - {x: -220.35701, y: -20.985}
+      - {x: -217.06601, y: -20.985}
+      - {x: -214.73901, y: -18.658}
+      - {x: -213.66602, y: -15.229001}
+      - {x: -212.884, y: -15.229001}
+      - {x: -210.557, y: -17.556002}
+      - {x: -210.557, y: -24.901001}
+      - {x: -206.54901, y: -21.888}
+      - {x: -206.42902, y: -21.027}
+      - {x: -209.62001, y: -17.516}
+      - {x: -209.62001, y: -14.225}
+      - {x: -207.29301, y: -11.898001}
+      - {x: -203.632, y: -11.898001}
+      - {x: -200.908, y: -14.026001}
+      - {x: -196.23001, y: -13.379001}
+      - {x: -193.90201, y: -15.706}
+      - {x: -193.90201, y: -19.367}
+      - {x: -195.26901, y: -20.734001}
+      - {x: -194.16501, y: -23.197}
+      - {x: -195.186, y: -24.218}
+      - {x: -194.44601, y: -33.801003}
+      - {x: -193.70601, y: -36.022003}
+      - {x: -184.57701, y: -44.534}
+      - {x: -184.703, y: -59.894}
+      - {x: -183.639, y: -60.958004}
+      - {x: -183.639, y: -67.299}
+      - {x: -185.281, y: -76.215004}
+      - {x: -187.608, y: -78.54201}
+      - {x: -189.83101, y: -78.436005}
+      - {x: -189.83101, y: -79.324005}
+      - {x: -193.26901, y: -82.021}
 --- !u!95 &2717366954369940974
 Animator:
   serializedVersion: 5
@@ -1462,15 +1512,15 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 6
-  m_Sprite: {fileID: 0}
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: e07c07299ccbe9141b1b4c9edcab5801, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 450, y: 180}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0

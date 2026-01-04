@@ -6,7 +6,7 @@ SpriteAtlas:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: RoomIglooAtlas
+  m_Name: CharacterPengAtlas
   m_EditorData:
     serializedVersion: 2
     textureSettings:
@@ -43,21 +43,17 @@ SpriteAtlas:
     secondaryTextureSettings: {}
     variantMultiplier: 1
     packables:
-    - {fileID: 102900000, guid: b7b531e8451aa9840a218f2d08633aa6, type: 3}
+    - {fileID: 102900000, guid: d88e6f0a4755d1640b869c880b9caf19, type: 3}
     bindAsDefault: 1
     isAtlasV2: 0
     cachedData: {fileID: 0}
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
-  - {fileID: 21300000, guid: 345c52b2ea9973544906423b426bbdf6, type: 3}
-  - {fileID: 21300000, guid: aedf3ae28d4df9e42ab7cb4ef1bee02b, type: 3}
-  - {fileID: 21300000, guid: e07c07299ccbe9141b1b4c9edcab5801, type: 3}
-  - {fileID: 21300000, guid: eacebefd19d32844c989a2fbb98ce105, type: 3}
+  - {fileID: 21300000, guid: 9987357eccd25ab43a66ba47391476e4, type: 3}
+  - {fileID: -7554830385867093728, guid: 776de28f526c7204ab9d14b170993868, type: 3}
   m_PackedSpriteNamesToIndex:
-  - happy-bg
-  - bucket
-  - fishbucket
-  - igloo background
+  - happy-pengu
+  - sad-pingu_0
   m_RenderDataMap: {}
-  m_Tag: RoomIglooAtlas
+  m_Tag: CharacterPengAtlas
   m_IsVariant: 0
