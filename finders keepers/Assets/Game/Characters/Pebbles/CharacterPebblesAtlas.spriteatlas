@@ -48,8 +48,16 @@ SpriteAtlas:
     isAtlasV2: 0
     cachedData: {fileID: 0}
   m_MasterAtlas: {fileID: 0}
-  m_PackedSprites: []
-  m_PackedSpriteNamesToIndex: []
+  m_PackedSprites:
+  - {fileID: -5710534824049947834, guid: de7bc5a07606bdb459a893d66cf7433a, type: 3}
+  - {fileID: -2772392687164255845, guid: a372e875f7421b2408828782e0898cf6, type: 3}
+  - {fileID: 6438855781198942551, guid: 7f8c4f085ef0c5a4bbd606fdc848189d, type: 3}
+  - {fileID: 4433483345532641027, guid: 943ac47a7b68a5d42a01c3c918be1962, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - pebbles-right_0
+  - pebbles-down_0
+  - pebbles-left_0
+  - pebbles-up_0
   m_RenderDataMap: {}
   m_Tag: CharacterPebblesAtlas
   m_IsVariant: 0
