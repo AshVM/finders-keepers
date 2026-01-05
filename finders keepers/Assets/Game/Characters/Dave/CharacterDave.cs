@@ -19,4 +19,10 @@ public class CharacterDave : CharacterScript<CharacterDave>
 
 		yield return E.Break;
 	}
+
+	IEnumerator OnUseInv( IInventory item )
+	{
+
+		yield return E.Break;
+	}
 }

@@ -55,8 +55,8 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 3128a95e76c6adf44a7ffde8daa56743, type: 3}
   m_PackedSpriteNamesToIndex:
   - fishbucket_0
-  - bucket_0
-  - water-bucket_0
+  - emptybucket_0
+  - waterbucket_0
   - Bucket_0
   m_RenderDataMap: {}
   m_Tag: InventoryAtlas

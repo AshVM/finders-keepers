@@ -26,4 +26,10 @@ public class CharacterBarney : CharacterScript<CharacterBarney>
 
 		yield return E.Break;
 	}
+
+	IEnumerator OnUseInv( IInventory item )
+	{
+
+		yield return E.Break;
+	}
 }

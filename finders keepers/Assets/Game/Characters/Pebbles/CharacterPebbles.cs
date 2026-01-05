@@ -19,4 +19,10 @@ public class CharacterPebbles : CharacterScript<CharacterPebbles>
 
 		yield return E.Break;
 	}
+
+	IEnumerator OnUseInv( IInventory item )
+	{
+
+		yield return E.Break;
+	}
 }

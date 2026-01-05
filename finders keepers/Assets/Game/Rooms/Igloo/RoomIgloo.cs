@@ -188,7 +188,7 @@ public class RoomIgloo : RoomScript<RoomIgloo>
 		yield return C.Display("pebbles stoops to pick up the bucket");
 		Audio.Play("Bucket");
 		prop.Disable();
-		I.FishBucket.AddAsActive();
+		I.FishBucket.Add();
 		yield return E.WaitSkip();
 		yield return C.Plr.FaceDown();
 		yield return C.Pebbles.Say("Yaaay! I got a bucket!");
@@ -206,7 +206,17 @@ public class RoomIgloo : RoomScript<RoomIgloo>
 
 	IEnumerator OnUseInvPropKeypad( IProp prop, IInventory item )
 	{
-
+		if ( item == I.WaterBucket )
+		{
+		
+			I.WaterBucket.Remove();
+			yield return E.WaitSkip();
+			yield return C.Display("Pebbles spills the water on the keypad");
+			yield return E.WaitSkip();
+			yield return C.Pebbles.Say("I should be able to open the employee door now!");
+			yield return E.WaitSkip();
+		
+		}
 		yield return E.Break;
 	}
 
@@ -221,7 +231,36 @@ public class RoomIgloo : RoomScript<RoomIgloo>
 		yield return C.WalkToClicked();
 		yield return C.FaceClicked();
 		
-		if ( item == I.
+		if ( item == I.EmptyBucket)
+		{
+			I.EmptyBucket.Remove();
+			I.WaterBucket.AddAsActive();
+			yield return E.WaitSkip();
+			yield return C.Display("Pebbles fills the empty bucket with water");
+			yield return E.WaitSkip();
+			yield return C.Pebbles.Say("The bucket's full now!");
+			yield return E.WaitSkip();
+		}
+		yield return E.Break;
+	}
+
+	IEnumerator OnUseInvHotspotEnclosure( IHotspot hotspot, IInventory item )
+	{
+
+		yield return E.Break;
+	}
+
+	IEnumerator OnInteractPropIceberg( IProp prop )
+	{
+		yield return C.WalkToClicked();
+		yield return C.FaceClicked();
+		
+		yield return E.WaitSkip();
+		yield return C.Pebbles.Say("That's our iceberg!");
+		yield return E.WaitSkip();
+		yield return C.Pebbles.Say("...it's probably fake.");
+		yield return E.WaitSkip();
+		
 		yield return E.Break;
 	}
 }
