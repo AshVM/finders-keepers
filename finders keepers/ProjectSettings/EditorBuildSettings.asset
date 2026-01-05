@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Game/Rooms/Igloo/SceneRoomIgloo.unity
     guid: ca6fe524f0df42846990e867c5d6c779
+  - enabled: 1
+    path: Assets/Game/Rooms/End/SceneRoomEnd.unity
+    guid: 29484b99c13da5b4ab3dc284d49d622b
   m_configObjects: {}

@@ -6,7 +6,7 @@ using static GlobalScript;
 
 public class RoomIgloo : RoomScript<RoomIgloo>
 {
-	
+	public bool keypadOff = false;
 	
 	
 	IEnumerator OnInteractHotspotWall( IHotspot hotspot )
@@ -45,13 +45,23 @@ public class RoomIgloo : RoomScript<RoomIgloo>
 		yield return C.WalkToClicked();
 		yield return C.FaceClicked();
 		
+		if (keypadOff == true)
+		{
+			yield return E.WaitSkip();
+			yield return C.Pebbles.Say("I wonder what lies beyond this door!");
+			yield return E.WaitSkip();
 		
-		yield return E.WaitSkip();
-		yield return C.Pebbles.Say("It's a restricted area..");
-		yield return E.WaitSkip();
-		yield return C.Pebbles.Say("..maybe I should go inside!");
-		yield return E.WaitSkip();
+			yield return E.ChangeRoom(R.End);
 		
+		}
+		else
+		{
+			yield return E.WaitSkip();
+			yield return C.Pebbles.Say("It's a restricted area..");
+			yield return E.WaitSkip();
+			yield return C.Pebbles.Say("..maybe I should go inside!");
+			yield return E.WaitSkip();
+		}
 		
 		
 		yield return E.Break;
@@ -215,6 +225,8 @@ public class RoomIgloo : RoomScript<RoomIgloo>
 			yield return E.WaitSkip();
 			yield return C.Pebbles.Say("I should be able to open the employee door now!");
 			yield return E.WaitSkip();
+		
+			keypadOff = true;
 		
 		}
 		yield return E.Break;
