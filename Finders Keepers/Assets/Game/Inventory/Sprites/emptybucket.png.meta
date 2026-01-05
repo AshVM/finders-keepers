@@ -4,7 +4,7 @@ TextureImporter:
   internalIDToNameTable:
   - first:
       213: -4696760917660491729
-    second: bucket_0
+    second: emptybucket_0
   externalObjects: {}
   serializedVersion: 12
   mipmaps:
@@ -95,7 +95,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: bucket_0
+      name: emptybucket_0
       rect:
         serializedVersion: 2
         x: 0
@@ -103,7 +103,7 @@ TextureImporter:
         width: 43
         height: 43
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

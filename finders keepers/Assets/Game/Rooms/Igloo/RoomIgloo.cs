@@ -203,4 +203,25 @@ public class RoomIgloo : RoomScript<RoomIgloo>
 
 		yield return E.Break;
 	}
+
+	IEnumerator OnUseInvPropKeypad( IProp prop, IInventory item )
+	{
+
+		yield return E.Break;
+	}
+
+	IEnumerator OnUseInvPropEmployeeDoor( IProp prop, IInventory item )
+	{
+
+		yield return E.Break;
+	}
+
+	IEnumerator OnUseInvPropLeak( IProp prop, IInventory item )
+	{
+		yield return C.WalkToClicked();
+		yield return C.FaceClicked();
+		
+		if ( item == I.
+		yield return E.Break;
+	}
 }

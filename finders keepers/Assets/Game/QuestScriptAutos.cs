@@ -28,6 +28,7 @@ namespace PowerScript
 		public static IInventory Bucket         { get { return PowerQuest.Get.GetInventory("Bucket"); } }
 		public static IInventory FishBucket     { get { return PowerQuest.Get.GetInventory("FishBucket"); } }
 		public static IInventory WaterBucket    { get { return PowerQuest.Get.GetInventory("WaterBucket"); } }
+		public static IInventory EmptyBucket    { get { return PowerQuest.Get.GetInventory("EmptyBucket"); } }
 		// #INVENTORY# - Do not edit this line, it's used by the system to insert rooms for easy access
 	}
 

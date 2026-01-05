@@ -13,4 +13,16 @@ public class InventoryWaterBucket : InventoryScript<InventoryWaterBucket>
 
 		yield return E.Break;
 	}
+
+	IEnumerator OnLookAtInventory( IInventory thisItem )
+	{
+
+		yield return E.Break;
+	}
+
+	IEnumerator OnUseInvInventory( IInventory thisItem, IInventory item )
+	{
+
+		yield return E.Break;
+	}
 }

@@ -20,4 +20,10 @@ public class CharacterHappyPeng : CharacterScript<CharacterHappyPeng>
 		yield return E.WaitSkip();
 		yield return E.Break;
 	}
+
+	IEnumerator OnUseInv( IInventory item )
+	{
+
+		yield return E.Break;
+	}
 }

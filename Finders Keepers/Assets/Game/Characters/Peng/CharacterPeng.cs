@@ -30,6 +30,7 @@ public class CharacterPeng : CharacterScript<CharacterPeng>
 			yield return C.FaceClicked();
 		
 			I.FishBucket.Remove(1);
+			I.EmptyBucket.AddAsActive(2);
 			yield return C.Display("Pebbles feeds the fish to Peng");
 			string Progress = "FedPeng";
 			yield return C.Peng.Say("Yaaay! Peng seems to have regained his spirit!");

@@ -31,4 +31,10 @@ public class CharacterDolphin : CharacterScript<CharacterDolphin>
 		
 		yield return E.Break;
 	}
+
+	IEnumerator OnUseInv( IInventory item )
+	{
+
+		yield return E.Break;
+	}
 }
