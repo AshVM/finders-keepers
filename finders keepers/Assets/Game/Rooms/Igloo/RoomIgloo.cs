@@ -42,7 +42,18 @@ public class RoomIgloo : RoomScript<RoomIgloo>
 
 	IEnumerator OnInteractPropEmployeeDoor( IProp prop )
 	{
-
+		yield return C.WalkToClicked();
+		yield return C.FaceClicked();
+		
+		
+		yield return E.WaitSkip();
+		yield return C.Pebbles.Say("It's a restricted area..");
+		yield return E.WaitSkip();
+		yield return C.Pebbles.Say("..maybe I should go inside!");
+		yield return E.WaitSkip();
+		
+		
+		
 		yield return E.Break;
 	}
 
@@ -93,7 +104,29 @@ public class RoomIgloo : RoomScript<RoomIgloo>
 
 	IEnumerator OnInteractPropKeypad( IProp prop )
 	{
-
+		yield return C.WalkToClicked();
+		yield return C.FaceClicked();
+		
+		
+		if (Prop("Keypad").UseCount == 0)
+		{
+			yield return E.WaitSkip();
+			yield return C.Pebbles.Say("It's a keypad to unlock the door..");
+			yield return E.WaitSkip();
+			yield return C.Pebbles.Say(".. I can't do anything with it while the audience is watching");
+			yield return E.WaitSkip();
+		}
+		else if (C.HappyPeng.Visible == true && C.HappyPeng.Clickable == true)
+		{
+			yield return E.WaitSkip();
+			yield return C.Pebbles.Say("The audience is distracted!");
+			yield return E.WaitSkip();
+			yield return C.Pebbles.Say("Maybe I can finally disable the keypad!");
+			yield return E.WaitSkip();
+			yield return C.Pebbles.Say("If only I had a way to some water to short circuit it...");
+			yield return E.WaitSkip();
+		
+		}
 		yield return E.Break;
 	}
 
@@ -142,6 +175,7 @@ public class RoomIgloo : RoomScript<RoomIgloo>
 		
 		
 		C.Pebbles.WalkToBG(Point("EntryPoint"));
+		bool fedPeng = false;
 		
 		
 		yield return E.Break;
@@ -161,6 +195,12 @@ public class RoomIgloo : RoomScript<RoomIgloo>
 		yield return E.WaitSkip();
 		yield return C.Display("Access your Inventory from the top of the screen");
 		
+		yield return E.Break;
+	}
+
+	IEnumerator OnUseInvPropPeople( IProp prop, IInventory item )
+	{
+
 		yield return E.Break;
 	}
 }

@@ -6,7 +6,7 @@ SpriteAtlas:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: InventoryAtlas
+  m_Name: CharacterHappyPengAtlas
   m_EditorData:
     serializedVersion: 2
     textureSettings:
@@ -43,21 +43,15 @@ SpriteAtlas:
     secondaryTextureSettings: {}
     variantMultiplier: 1
     packables:
-    - {fileID: 102900000, guid: 37f6ada2ecf514d43b8058e006148770, type: 3}
+    - {fileID: 102900000, guid: e05c8df3e6c53cb4e88e0aafc1c3ff8b, type: 3}
     bindAsDefault: 1
     isAtlasV2: 0
     cachedData: {fileID: 0}
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
-  - {fileID: -7214823444320825953, guid: 0ba29846d837a7c47bdcc5c7a538ee14, type: 3}
-  - {fileID: -4696760917660491729, guid: 7f67f5a6b5f4d954aa929dcdad936b0f, type: 3}
-  - {fileID: 435384084129751177, guid: c49fe9077fa73b744a299eaa1eca8bbe, type: 3}
-  - {fileID: 21300000, guid: 3128a95e76c6adf44a7ffde8daa56743, type: 3}
+  - {fileID: 21300000, guid: 9987357eccd25ab43a66ba47391476e4, type: 3}
   m_PackedSpriteNamesToIndex:
-  - fishbucket_0
-  - bucket_0
-  - water-bucket_0
-  - Bucket_0
+  - happy-pengu
   m_RenderDataMap: {}
-  m_Tag: InventoryAtlas
+  m_Tag: CharacterHappyPengAtlas
   m_IsVariant: 0
