@@ -175,12 +175,16 @@ public class RoomIgloo : RoomScript<RoomIgloo>
 		if ( FirstTimeVisited && EnteredFromEditor == false ) // Only run this part the first time you visit, and not when debugging
 		{
 			yield return E.WaitSkip();
-			yield return C.Pebbles.Say("Well, I guess this is a test project for an adventure game");
+			yield return C.Pebbles.Say("Man, I want outta this enclosure!");
 			yield return C.Pebbles.WalkTo(Point("EntryWalk"));
-			yield return C.Pebbles.Say("Sure looks adventurey!");
+			yield return C.Pebbles.Say("If only there was a way out...");
 			Audio.PlayMusic("MusicExample");
 			yield return E.WaitSkip();
 			yield return C.Display("Left Click to Walk & Interact\nRight Click to Look At");
+			yield return E.WaitSkip();
+			yield return C.Display("... Let's pretend the wonky walking animation is a feature of the game :p");
+			yield return E.WaitSkip();
+		
 		}
 		
 		
