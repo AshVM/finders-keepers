@@ -29,6 +29,7 @@ public class CharacterPeng : CharacterScript<CharacterPeng>
 			yield return C.WalkToClicked();
 			yield return C.FaceClicked();
 		
+		
 			I.FishBucket.Remove();
 			I.EmptyBucket.Add();
 			yield return C.Display("Pebbles feeds the fish to Peng");
@@ -36,6 +37,10 @@ public class CharacterPeng : CharacterScript<CharacterPeng>
 		
 			C.Peng.Visible = false;
 			C.Peng.Clickable = false;
+		
+			C.HappyPeng.Visible = true;
+			C.HappyPeng.Clickable = true;
+		
 			yield return E.Wait(1);
 			yield return C.Display("You now have an empty bucket");
 			yield return E.WaitSkip();
@@ -44,8 +49,7 @@ public class CharacterPeng : CharacterScript<CharacterPeng>
 			yield return C.Pebbles.Say("Yaay! maybe I can fill it with something!");
 			yield return E.WaitSkip();
 		
-			C.HappyPeng.Visible = true;
-			C.HappyPeng.Clickable = true;
+		
 		}
 		yield return E.Break;
 	}

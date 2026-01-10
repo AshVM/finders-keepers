@@ -76,7 +76,7 @@ MonoBehaviour:
     m_textOffset: {x: 0, y: 0}
     m_LipSyncEnabled: 0
     m_antiGlide: 0
-    m_footstepSound: 
+    m_footstepSound: SNOWSFX
     m_useSpriteAsHotspot: 1
     m_baseline: 0
     m_walkToPoint: {x: 4, y: -0}

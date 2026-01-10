@@ -7,6 +7,8 @@ using static GlobalScript;
 public class RoomIgloo : RoomScript<RoomIgloo>
 {
 	public bool keypadOff = false;
+	public bool fedPeng = false;
+	
 	
 	
 	IEnumerator OnInteractHotspotWall( IHotspot hotspot )
@@ -72,10 +74,14 @@ public class RoomIgloo : RoomScript<RoomIgloo>
 		yield return C.FaceClicked();
 		yield return C.WalkToClicked();
 		
-		if (E.Occurrence("usePeople") > 1)
+		
+		if (C.HappyPeng.Visible == true)
 		{
-			yield return C.Pebbles.Say("someone should cheer them up!");
+		 yield return E.WaitSkip();
+		 yield return C.Pebbles.Say("The audience must be distracted now!");
+		 yield return E.WaitSkip();
 		}
+		
 		else
 		{
 			yield return E.WaitSkip();
@@ -84,6 +90,7 @@ public class RoomIgloo : RoomScript<RoomIgloo>
 			yield return C.Pebbles.Say("Maybe someone cheer them up!");
 			yield return E.WaitSkip();
 		}
+		
 		yield return E.Break;
 	}
 
@@ -172,6 +179,7 @@ public class RoomIgloo : RoomScript<RoomIgloo>
 	{
 		// Put things here that happen when you enter a room
 		
+		
 		if ( FirstTimeVisited && EnteredFromEditor == false ) // Only run this part the first time you visit, and not when debugging
 		{
 			yield return E.WaitSkip();
@@ -182,14 +190,13 @@ public class RoomIgloo : RoomScript<RoomIgloo>
 			yield return E.WaitSkip();
 			yield return C.Display("Left Click to Walk & Interact\nRight Click to Look At");
 			yield return E.WaitSkip();
-			yield return C.Display("... Let's pretend the wonky walking animation is a feature of the game :p");
+			yield return C.Display("Right Click to Deselect Inventory Items");
 			yield return E.WaitSkip();
 		
 		}
 		
 		
 		C.Pebbles.WalkToBG(Point("EntryPoint"));
-		bool fedPeng = false;
 		
 		
 		yield return E.Break;
