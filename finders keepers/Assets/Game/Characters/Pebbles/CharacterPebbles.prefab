@@ -53,7 +53,7 @@ MonoBehaviour:
     m_cursor: 
     m_room: 
     m_position: {x: -27.22, y: -42.8}
-    m_faceDirection: 1
+    m_faceDirection: 2
     m_clickable: 0
     m_visible: 1
     m_inventory: []
@@ -63,7 +63,7 @@ MonoBehaviour:
     m_solidSize: {x: 20, y: 4}
     m_turnBeforeWalking: 1
     m_turnBeforeFacing: 1
-    m_turnSpeedFPS: 12
+    m_turnSpeedFPS: 1
     m_adjustSpeedWithScaling: 1
     m_textColour: {r: 1, g: 1, b: 1, a: 1}
     m_animIdle: Idle
@@ -77,16 +77,20 @@ MonoBehaviour:
     m_LipSyncEnabled: 0
     m_antiGlide: 0
     m_footstepSound: 
-    m_useSpriteAsHotspot: 0
+    m_useSpriteAsHotspot: 1
     m_baseline: 0
-    m_walkToPoint: {x: 2, y: -28}
-    m_lookAtPoint: {x: 2, y: -30}
+    m_walkToPoint: {x: 4, y: -0}
+    m_lookAtPoint: {x: 2, y: 1}
     m_scriptName: Pebbles
     m_scriptClass: CharacterPebbles
   m_clickableColliders: []
   m_turnAnims: []
   m_transitionAnims: []
-  m_animations: []
+  m_animations:
+  - {fileID: 7400000, guid: ed4e82bba5420344e9d1854ebda09fb5, type: 2}
+  - {fileID: 7400000, guid: d807e8e0ea6797f46b4c1e121abd2d14, type: 2}
+  - {fileID: 7400000, guid: dd724c489f70d5a449ee0f3dd2b26309, type: 2}
+  - {fileID: 7400000, guid: 9290ee0889ec98740a622df72e015e63, type: 2}
 --- !u!60 &5337151554672753905
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -112,8 +116,11 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 2.8580017, y: 9.585003}
-      - {x: 2.8310013, y: 9.290001}
+    - - {x: 4.353, y: 19.567001}
+      - {x: 2.9160001, y: 21.480001}
+      - {x: 2.914, y: 22.921001}
+      - {x: 6.3820004, y: 20.2}
+      - {x: 4.434, y: 18.547}
 --- !u!212 &720470320075721308
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -179,7 +186,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_tint: {r: 1, g: 1, b: 1, a: 0}
   m_outline: {r: 1, g: 1, b: 1, a: 0}
-  m_offset: {x: 0, y: 8.58}
+  m_offset: {x: 0, y: 29}
   m_shaderOverride: {fileID: 0}
 --- !u!95 &2707291849559807187
 Animator:

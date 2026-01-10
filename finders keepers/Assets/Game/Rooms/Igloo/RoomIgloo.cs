@@ -59,7 +59,7 @@ public class RoomIgloo : RoomScript<RoomIgloo>
 			yield return E.WaitSkip();
 			yield return C.Pebbles.Say("It's a restricted area..");
 			yield return E.WaitSkip();
-			yield return C.Pebbles.Say("..maybe I should go inside!");
+			yield return C.Pebbles.Say("..maybe I can use it to get outta here!");
 			yield return E.WaitSkip();
 		}
 		
